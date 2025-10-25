@@ -1,0 +1,25 @@
+.main-cont{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    /* gap: 10px; */
+    /* box-shadow: 0 0 0 1.3px black; */
+}
+.cards{
+    /* border: 1px solid black; */
+    width: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0  40px beige;
+    border-radius: 10px;
+}
+.newh4{
+    color: grey;
+    font-size: large;
+}
+.newp{
+    font-size: larger;
+    font-weight: 1000;
+}

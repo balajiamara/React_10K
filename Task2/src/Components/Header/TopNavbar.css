@@ -1,0 +1,13 @@
+.support{
+    margin-top: 5px;
+    color: grey;
+}
+.price{
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
+span{
+    font-size: large;
+    font-weight: 600;
+}
