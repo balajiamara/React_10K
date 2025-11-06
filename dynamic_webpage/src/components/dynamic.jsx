@@ -37,26 +37,26 @@ export class Message extends Component {
 
 
 // Method 1 Binding in a Constructor
-export class Random extends Component {   
-    constructor(){
-        super();
-        this.state={num:Math.random()};
+// export class Random extends Component {   
+//     constructor(){
+//         super();
+//         this.state={num:Math.random()};
 
-        this.ranNum=this.ranNum.bind(this);
-    }
-    ranNum(){
-        this.setState({num: Math.random()})
-    };
+//         this.ranNum=this.ranNum.bind(this);
+//     }
+//     ranNum(){
+//         this.setState({num: Math.random()})
+//     };
     
-    render(){
-        return (<div>
-            <h2>This is a random number component</h2>
-            <h2>{this.state.num}</h2>
-            <button onClick={this.ranNum}>Random</button>
-        </div>
-        );
-    }
-}
+//     render(){
+//         return (<div>
+//             <h2>This is a random number component</h2>
+//             <h2>{this.state.num}</h2>
+//             <button onClick={this.ranNum}>Random</button>
+//         </div>
+//         );
+//     }
+// }
 
 // Method 2 and Method 3
 export class CounterApp extends Component {
@@ -99,4 +99,43 @@ export class CounterApp extends Component {
         </div>
 
     }
+}
+
+
+export class Randomnum extends Component{
+    constructor(){
+        super();
+        this.state={num:Math.random()};
+    }
+        Randomnum=()=>{
+            this.setState({num:Math.random()})
+        }
+        render(){
+            return (
+            <div>
+                <p>{this.state.num}</p>
+                <button onClick={this.Randomnum}>Generate</button>
+            </div>
+                
+            )
+        }
+}
+
+
+
+export class InputBox extends Component{
+    constructor(){
+        super();
+        this.state={text:''};
+    }
+    textChange(event){
+        this.setState({text:event.target.value})
+    }
+    render(){
+        return(
+            <div>
+                <input type="text" onChange={event}=>this.textChange(event) />
+            </div>
+        )    
+}
 }
