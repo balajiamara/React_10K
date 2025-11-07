@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(176, 225, 245);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.categories-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 12px black;
+}
+
+.categories-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #333;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.filter-section label {
+  font-weight: 600;
+  color: #444;
+}
+
+.filter-section select {
+  padding: 8px 14px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.filter-section select:hover,
+.filter-section select:focus {
+  border-color: skyblue;
+  outline: none;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product-item {
+  padding: 15px 20px;
+  border-bottom: 1px solid white;
+  transition: background 0.2s ease, transform 0.1s ease;
+  font-size: 16px;
+  color: #333;
+}
+
+.product-item:hover {
+  background-color: lightblue;
+  transform: translateX(4px);
+}
+
+.product-item strong {
+  color: black;
+}
+
+.product-item:last-child {
+  border-bottom: none;
+}
+
+.no-products {
+  text-align: center;
+  color: grey;
+  font-style: italic;
+  padding: 20px;
+}
