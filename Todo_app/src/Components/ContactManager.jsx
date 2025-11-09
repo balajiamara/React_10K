@@ -1,4 +1,5 @@
 import {Component} from 'react';
+import './style.css'
 
 
 export class Todo extends Component{
@@ -98,7 +99,7 @@ export class Todo extends Component{
                         <tr>
                             <th>NAME</th>
                             <th>EMAIL</th>
-                            <th>ACTION</th>
+                            <th className='action'>ACTION</th>
                         </tr>
                     </thead>
                     <tbody>
