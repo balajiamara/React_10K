@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import Categories from './components/Categories';
+import Unmounting from './components/Unmounting'
 // import axios from 'axios';
 
 
@@ -51,9 +52,20 @@ import Categories from './components/Categories';
 
 
 export class App extends Component{
+
+  constructor(){
+    super();
+    this.state={visible:false}
+  }
+  toggle(){
+    this.setState({visible: !this.state.visible})
+  }
   render(){
     return <>
     <Categories/>
+    {/* <button onClick={()=>this.toggle()}>{this.state.visible}</button>
+    {this.state.visible && Unmounting} */}
+    {/* <Unmounting/> */}
     </>
     
   }

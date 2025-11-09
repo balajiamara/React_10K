@@ -1,9 +1,9 @@
-body {
+/* body {
   background-color: rgb(176, 225, 245);
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
+} */
 
 div {
   box-sizing: border-box;
@@ -15,7 +15,7 @@ div {
   background: white;
   border-radius: 10px;
   padding: 30px 40px;
-  box-shadow: 0 4px 12px black;
+  box-shadow: 0 4px 12px grey;
 }
 
 .categories-container h2 {
